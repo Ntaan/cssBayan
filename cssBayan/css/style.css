@@ -18,7 +18,7 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 
@@ -41,8 +41,9 @@
 .accordion__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1vh 0;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1vh;
 }
 
@@ -74,14 +75,42 @@ input[type="radio"] {
   transform: rotate(45deg);
 }
 
-
 .accordion__content img {
-  width: 30%;
+  width: 50%;
 }
+
+
 
 .accordion__header:hover + .accordion__content {
   max-height: 1000px;
   transition: max-height 1s ease-in;
 }
 
+
+@media (max-width: 960px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .accordion__header {
+    font-size: 1.6rem;
+  }
+
+  .accordion__content img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .accordion__header {
+    font-size: 1rem;
+  }
+  .accordion__content img {
+    width: 100%;
+  }
+}
 
